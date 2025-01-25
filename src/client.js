@@ -12,7 +12,6 @@ client.on('error', (err) => {
     console.error('Error:', err);
 });
 
-// Klientga foydalanuvchi kiritishini kutish
 process.stdin.on('data', (data) => {
     client.write(data.toString());
 });
